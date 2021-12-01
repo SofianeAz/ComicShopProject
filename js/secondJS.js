@@ -44,18 +44,9 @@ const boutonPannier = document.getElementById('pannier');
 console.log(buyingArray)
 
 
+const tutorialPannier = document.getElementById('buytutorial');
 
-
-
-
-
-
-
-
-
-
-
-/////////////////////////////////ATTENTION PUSH DANS LE MAUVAIS TABLEAU LA A VERIFIER
+/////////////////////////////////ATTENTION PUSH DANS LES TABLEAUX A VERIFIER
 /////////////////////////////////////////////////////////////////////////////////
 
 // Function de création de la liste d'achat avec bouton pour supprimer son contenu
@@ -80,6 +71,7 @@ function createMyList() {
     // affichage du bouton pour aller à son pannier 
     if(buyingCart.length != 0){
         boutonPannier.classList.remove('hide');
+        tutorialPannier.classList.remove('hide');
     }
     // ajoute de l'objet dans le tableau d'achat
     

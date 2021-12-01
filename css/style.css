@@ -100,7 +100,16 @@ input:focus:invalid {
   width: 100%;
 }
 
-#pannier{
+#buytutorial{
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width: 98%;
+  height: auto;
+  border: 2px black solid;
+}
+@media (min-width: 600px){
+  #pannier{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -110,10 +119,35 @@ input:focus:invalid {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  color:transparent;
   padding:3vh;
+  height: 20vh;
   width: 20vw;
 }
+#pannier:hover{
 
+  /* color: transparent; */
+  text-align: bottom;
+  color:transparent;
+  background: url(https://image.shutterstock.com/z/stock-photo-cartoon-comic-book-template-theme-the-end-535293895.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding:3vh;
+  height: 20vh;
+  width: 20vw;
+  animation: rotateforme 1s ease-in-out;
+}
+}
+
+@keyframes rotateforme{
+         0%{  transform: rotate(60deg);          }
+          /* 40% {  transform: rotate(90deg); } */
+
+          50% { transform: rotate(180deg);}
+          /* 80% {  transform: rotate(280deg);} */
+          100% {  transform: rotate(360deg);}
+}
 
 
 /* conteneur de la liste */
@@ -345,11 +379,12 @@ a {
   justify-self: center;
   color: black;
   border: 3px orange solid;
-  height: 5vh;
-  width: 20vw;
+  height: 15vh;
+  width: 50vw;
   margin-top: 5vh;
-  transition: 1s;
-  font-size: 0.6em;
+  margin-bottom: 5vh;
+  transition: 1s ease-in-out;
+  font-size: 1em;
   }
   #buy-this:hover{
     background:   url(https://image.freepik.com/vecteurs-libre/blue-comic-background_1035-7973.jpg);
@@ -357,7 +392,7 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     letter-spacing: 1px;
-    transition: 1s;
+    transition: 1s ease-in-out;
   
   }
 }
@@ -370,10 +405,13 @@ a {
   justify-self: center;
   color: black;
   border: 3px orange solid;
-  height: 7vh;
-  width: 12vw;
+  height: 15vh;
+  width: 40vw;
   margin-top: 5vh;
+  margin-bottom: 5vh;
   transition: 1s;
+  font-size: 1em;
+  transition: 1s ease-in-out;
 }
 #buy-this:hover{
   background:   url(https://image.freepik.com/vecteurs-libre/blue-comic-background_1035-7973.jpg);
@@ -381,7 +419,7 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   letter-spacing: 3px;
-  transition: 1s;
+  transition: 1s ease-in-out;
 
   }
 }
@@ -410,6 +448,7 @@ a {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  height: 5vh;
   
 }
 

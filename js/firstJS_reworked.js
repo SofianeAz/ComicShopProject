@@ -202,6 +202,10 @@ jQuery(document).ready(function ($) {
 	//function qui est donné (que j'ai un peu modifié en ajoutant quelques valeurs dont j'ai besoin pour mes functions
 	// specialement le datalink pour le cadie ainsi qu'un tableau pour recuperer le cadie complet sur une autre page
 	function getAlbum(num) {
+		if(window.screen.width > 600){
+		window.scrollTo(780, 780);
+		} else {window.scrollTo(1120, 1120);}
+		
 
 
 		// j'ai ajouté le "num" en tant que parametre possible pour qu'il fonctionne avec mes functions
