@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Les BD</title>
+</head>
+
+<body>
+    <!-- navigation -->
+
+
+    <nav id="nav">
+        <button class="btn btnavigation">HOME</button>
+        <button class="btn btnavigation">BOUTIQUE</button>
+        <button class="btn btnavigation">PROMO !</button>
+        <button class="btn btnavigation">CONTACT </button>
+    </nav>
+      
+
+    <section class="hero">
+       
+        <!-- <img src="https://www.creativefabrica.com/wp-content/uploads/2020/08/20/comic-background-template-for-design-Graphics-5047065-1.jpg" class="img-fluid rounded mx-auto d-block" alt="" /> -->
+        <h1 id="text-center"> Bienvenue dans la boutique !</h1>
+    </section>
+    <!-- meteo -->
+    <div id="meteo">
+        <a class="weatherwidget-io" href="https://forecast7.com/en/48d696d18/nancy/" data-label_1="NANCY"
+            data-label_2="WEATHER" data-theme="original">NANCY WEATHER</a>
+        <script>
+            !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
+        </script>
+    </div>
+
+
+    <!-- pannier -->
+    <div class="conteneur-liste-achat">
+        <button id="pannier" > Validez vos achats !
+            <!-- <a href="cart.html">Finalisez vos achats</a> -->
+         </button>
+        <div id="buying-list">
+        </div>
+        <div id="final-buy">
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <h1 class="title">Liste des BD</h1>
+
+        <div class="row">
+            <div class="col2-l col-sm">
+                <div id='myformcontainer'>
+                <div class="form-group">
+                    <label for="id">Id de l'album :</label>
+                    <input type="number" required id="id" value="0" min="0" title="Saisissez un numéro et validez">
+                </div>
+                
+                <div class="form-group">
+                    <label for="idserie">Id de la serie :</label>
+                    <input type="number" required id="idserie" value="0" min="0" title="Saisissez un numéro et validez">
+                </div>
+                
+                <div class="form-group">
+                    <label for="serie">Série :</label>
+                    <input type="text" id="serie" placeholder="Serie">
+                </div>
+                <div class="form-group">
+                    <label for="numero">Album N° :</label>
+                    <input type="text" id="numero" placeholder="numero">
+                </div>
+
+                <div class="form-group">
+                    <label for="titre">Titre :</label>
+                    <input type="text" id="titre" placeholder="Titre de l'ouvrage">
+                </div>
+
+                <div class="form-group">
+                    <label for="auteur">Auteur :</label>
+                    <input type="text" id="auteur" placeholder="Nom de l'auteur">
+                </div>
+                
+                
+                <div class="form-group">
+                    <label for="prix">Prix :</label>
+                    <input type="number" id="prix" placeholder="prix en euros">
+                </div>
+                
+
+                <div class="form-group">
+                    <label for="search-engine"> Recherche :</label>
+                    <input type="text" id="search-engine" placeholder="Entrez votre recherche">
+                    <button type="button" id="search-item" class="btn">Rechercher</button>
+                    <button type="button" id="purge" class="btn">Supprimer la recherche</button>
+                </div>
+                </div>
+                <div id="minicontainer">
+                    <img src="images/noComicsMini.jpeg" class="rounded mx-auto d-block" id="albumMini">
+                </div>
+            </div>
+
+            <div class="col2-l col-sm">
+
+                <img src="images/noComics.jpeg" class="img-fluid rounded mx-auto d-block" id="album">
+
+            </div>
+
+        </div>
+
+
+    </div>
+    <div class="col">
+        
+    </div>
+
+    <div id="list-container">
+        <h4 id="tutorial">Faites votre recherche, puis cliquer sur le livre que vous souhaitez acheter ! Ensuite il ne reste plus qu'à l'ajouter à votre panier !</h4>
+        <button id="buy-this"> Add to cart</button>
+    </div>
+
+    <div id="myseries-search"></div>
+    <footer id="footman" class="container-fluid">
+        <!-- <img id="foot-img" src="https://image.freepik.com/free-vector/comic-background-yellow-pop-art-color_10876-683.jpg" class="img-fluid rounded mx-auto d-block"  alt="" /> -->
+      
+        <div class="footman-content">
+            <span>mail: laboutique@mail.com</span>
+            <span>numero: 00 98 85 65 15</span>
+            <span>FAQ: <a href="#faq">Reponses à vos questions</a></span>
+        </div>
+        <div class="footman-content">
+        <button id="tothetop" > <a href="#nav">Go back to the Top</a> </button>
+        </div>
+        <div class="footman-content">
+        
+            <span>Copyright by Sofiane Az. 2021</span>
+        
+        </div>
+       
+
+
+
+
+
+        
+       
+    </footer>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS, then the best JS - my JS. -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="data/albums.js"></script>
+    <script src="data/series.js"></script>
+    <script src="data/auteurs.js"></script>
+    <script src="js/firstJS_reworked.js"></script>
+    <script src="js/secondJS.js"></script>
+</body>
+
+</html>
