@@ -528,10 +528,12 @@ a:visited{
 
 }
 
-
 .hide{
   display:none;
+  visibility: hidden;
 }
+
+
 
 #mon-pannier{
   height: 70vh;
