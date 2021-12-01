@@ -114,11 +114,11 @@ function createMyList() {
 }
 
 
-// tentative d'éffacement dans le tableau d'achat
+// tentative d'éffacement dans le tableau d'achat ---- datalink sur le bouton + un "this" en parametre à l'appel ---- pas encore éffectué
 function removeFromCart(parametre){
     let variableData = parametre.getAttribute("datalink");
     for(i=0; i < buyingCart.length; i++){ 
-            const element = buyingCart[i]
+                    const element = buyingCart[i]
         if(element == variableData){
                     buyingCart.splice(i, 1);
         }               
