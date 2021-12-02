@@ -38,20 +38,13 @@
     </div>
 
 
-    <!-- pannier -->
-    <div class="conteneur-liste-achat">
-        <h4  id="buytutorial" class="tutorial hide">Cliquez en DESSOUS pour valider vos achats !</h4>
-        <button id="pannier" class="hide" > Validez vos achats !
-            <!-- <a href="cart.html">Finalisez vos achats</a> -->
-         </button>
-        <div id="buying-list">
-        </div>
-        <div id="final-buy">
-        </div>
-    </div>
+   
 
     <div class="container-fluid">
         <h1 class="title">Liste des BD</h1>
+
+
+        
 
         <div class="row">
             <div class="col2-l col-sm">
@@ -92,6 +85,7 @@
                 </div>
                 
 
+                <h4  class="tutorial">Faites votre recherche en dessous, puis cliquer sur le livre que vous souhaitez acheter ! Ensuite il ne reste plus qu'à l'ajouter à votre panier ! </h4>
                 <div class="form-group">
                     <label for="search-engine"> Recherche :</label>
                     <input type="text" id="search-engine" placeholder="Entrez votre recherche">
@@ -121,8 +115,23 @@
     <div id="list-container">
         
         <button id="buy-this"> Add to cart</button>
-        <h4  class="tutorial">Faites votre recherche, puis cliquer sur le livre que vous souhaitez acheter ! Ensuite il ne reste plus qu'à l'ajouter à votre panier ! <br/> <br/> NOTE: Votre PANNIER sera en haut de la page !</h4>
+       
+        
+         <!-- pannier -->
+    <div class="conteneur-liste-achat">
+        <h4  id="buytutorial" class="tutorial hide">Cliquez en DESSOUS pour valider vos achats !</h4>
+        <button id="pannier" class="hide" > Validez vos achats !
+            <!-- <a href="cart.html">Finalisez vos achats</a> -->
+         </button>
+        <!-- <div id="buying-list">
+        </div> -->
+        <div id="final-buy">
+        </div>
     </div>
+        <div id="buying-list">
+        </div>
+    </div>
+
 
     <div id="myseries-search"></div>
     <footer id="footman" class="container-fluid">
@@ -168,6 +177,7 @@
     <script src="data/auteurs.js"></script>
     <script src="js/firstJS_reworked.js"></script>
     <script src="js/secondJS.js"></script>
+    <!-- <script src="cart.js"></script> -->
 </body>
 
 </html>

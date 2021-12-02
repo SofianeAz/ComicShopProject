@@ -203,7 +203,7 @@ jQuery(document).ready(function ($) {
 	// specialement le datalink pour le cadie ainsi qu'un tableau pour recuperer le cadie complet sur une autre page
 	function getAlbum(num) {
 		if(window.screen.width > 600){
-		window.scrollTo(780, 780);
+		window.scrollTo(450, 450);
 		} else {window.scrollTo(1120, 1120);}
 		
 
