@@ -238,25 +238,30 @@ purgeBtn.addEventListener('click', () => deleteEveryThing());
 
 const miniPicSearchContainer = document.getElementById("myseries-search");
 
-
+// const serieId = document.getElementById('idserie');
 
 // function to delete everything from inputs
 function deleteEveryThing(){
         miniPicSearchContainer.innerHTML = '';
-        mySerie.value = '';
+        mySerie.value = 0;
+        serieIdInput.value = 0;
         myNumero.value = '';
         myAuthor.value = '';
         myPrice.value = '';
         myTitle.value = '';
-        serieIdInput.value = '';
+        searchInput.value ='';
+       
+        
 }
 
 ///////////////////////// Reminder of containers //////////////
+//
+// const serieIdInput = document.getElementById("idserie");
 // const mySerie = document.getElementById("serie");
 // const myNumero = document.getElementById("numero");
 // const myAuthor = document.getElementById("auteur");
 // const myPrice = document.getElementById("prix");
-
+// const myTitle = document.getElementById('titre');
 // console.log(getMeAlbums(52));
 
 
