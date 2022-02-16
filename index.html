@@ -16,6 +16,7 @@
 
 
     <nav id="nav">
+        <!-- ajouter les balises <a> -->
         <button class="btn btnavigation">HOME</button>
         <button class="btn btnavigation">BOUTIQUE</button>
         <button class="btn btnavigation">PROMO !</button>
@@ -51,44 +52,44 @@
                 <div id='myformcontainer'>
                 <div class="form-group">
                     <label for="id">Id de l'album :</label>
-                    <input type="number" required id="id" value="0" min="0" title="Saisissez un numéro et validez">
+                    <input type="number" class="form-control" required id="id" value="0" min="0" title="Saisissez un numéro et validez">
                 </div>
                 
                 <div class="form-group">
                     <label for="idserie">Id de la serie :</label>
-                    <input type="number" required id="idserie" value="0" min="0" title="Saisissez un numéro et validez">
+                    <input type="number" class="form-control" required id="idserie" value="0" min="0" title="Saisissez un numéro et validez">
                 </div>
                 
                 <div class="form-group">
                     <label for="serie">Série :</label>
-                    <input type="text" id="serie" placeholder="Serie">
+                    <input type="text" class="form-control" id="serie" placeholder="Serie">
                 </div>
                 <div class="form-group">
                     <label for="numero">Album N° :</label>
-                    <input type="text" id="numero" placeholder="numero">
+                    <input type="text"  class="form-control" id="numero" placeholder="numero">
                 </div>
 
                 <div class="form-group">
                     <label for="titre">Titre :</label>
-                    <input type="text" id="titre" placeholder="Titre de l'ouvrage">
+                    <input type="text" class="form-control" id="titre" placeholder="Titre de l'ouvrage">
                 </div>
 
                 <div class="form-group">
                     <label for="auteur">Auteur :</label>
-                    <input type="text" id="auteur" placeholder="Nom de l'auteur">
+                    <input type="text" class="form-control" id="auteur" placeholder="Nom de l'auteur">
                 </div>
                 
                 
                 <div class="form-group">
                     <label for="prix">Prix :</label>
-                    <input type="number" id="prix" placeholder="prix en euros">
+                    <input type="number" class="form-control" id="prix" placeholder="prix en euros">
                 </div>
                 
 
                 <h4  class="tutorial">Faites votre recherche en dessous, puis cliquer sur le livre que vous souhaitez acheter ! Ensuite il ne reste plus qu'à l'ajouter à votre panier ! </h4>
                 <div class="form-group">
                     <label for="search-engine"> Recherche :</label>
-                    <input type="text" id="search-engine" placeholder="Entrez votre recherche">
+                    <input type="text" id="search-engine" class="form-control" placeholder="Entrez votre recherche">
                     <button type="button" id="search-item" class="btn">Rechercher</button>
                     <button type="button" id="purge" class="btn">Supprimer la recherche</button>
                 </div>
@@ -113,7 +114,7 @@
     </div>
 
     <div id="list-container">
-        
+        <p id="success" class="btn-success hide">Successfully added to cart !</p>
         <button id="buy-this"> Add to cart</button>
        
         
@@ -128,6 +129,7 @@
         <div id="final-buy">
         </div>
     </div>
+    <div class="container light"><p class="tutorial">Cliquez sur BOOM pour supprimer un objet</p></div>
         <div id="buying-list">
         </div>
     </div>
@@ -142,9 +144,9 @@
             <span>numero: 00 98 85 65 15</span>
             <span>FAQ: <a href="#faq">Reponses à vos questions</a></span>
         </div>
-        <div class="footman-content">
+       
         <button id="tothetop" > <a href="#nav">Go back to the Top</a> </button>
-        </div>
+        
         <div class="footman-content">
         
             <span>Copyright by Sofiane Az. 2021</span>
