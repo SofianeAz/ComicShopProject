@@ -7,7 +7,7 @@
 }
 .hero{
   padding: 5%;
-  background-image: url("https://www.creativefabrica.com/wp-content/uploads/2020/08/20/comic-background-template-for-design-Graphics-5047065-1.jpg");
+  background-image: url("https://image.over-blog.com/wKMEpRF3_vGEAd4Pxq4iYi6hQ-4=/1000x288/smart/filters:no_upscale()/image%2F1528295%2F20150912%2Fob_dd2240_banner-aec-alpha-sept2015-v2-300dpi.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -16,12 +16,14 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 25%;
+  height: 30%;
+  margin-top: 8%;
 
 }
 body {
   font: 1em 'Bangers', "cursive";
-  background: linear-gradient(0deg, rgba(255,255,255,1) 31%, rgba(255,115,0,1) 100%);
+  /* background: rgb(255,255,255); */
+  /* background: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(0,224,255,1) 50%, rgba(255,255,255,1) 0%); */
   width: 100%;
 
 }
@@ -30,6 +32,7 @@ body {
   max-width: 100%;
   margin:0;
   padding: 0;
+  height: 80px !important;
 }
 
 
@@ -80,7 +83,9 @@ legend {
   color: #fff;
   padding: 3px 6px;
 }
-
+#main{
+  background: rgb(201, 56, 51);
+}
 /* input[type=text],
 input[type=email],
 input[type=number],
@@ -121,6 +126,9 @@ input:focus:invalid {
   color: red;
 }
 
+#tutocontainer{
+  background: rgb(201, 56, 51);
+}
 /* Cart / pannier */
 .newcard{
   display: flex;
@@ -132,17 +140,23 @@ input:focus:invalid {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  background: rgb(201, 56, 51);
   flex-direction: column;
   width: 100%;
 }
 
 #buytutorial{
-  display: flex;
+  display: none;
   justify-content: center;
   align-self: center;
-  width: 98%;
+  width: 100%;
   height: auto;
   border: 2px black solid;
+}
+.tutorial{
+  background-color: gray;
+  padding: 1%;
+  font-size: 0.9em;
 }
 @media (min-width: 600px){
   #pannier{
@@ -151,7 +165,7 @@ input:focus:invalid {
   align-items: center;
   align-self: center;
   color: transparent;
-  background: url(https://image.shutterstock.com/z/stock-photo-cartoon-comic-book-template-theme-the-end-535293895.jpg);
+  background: url(https://img.myloview.fr/images/vector-cartoon-shopping-cart-icon-in-comic-style-shop-bag-sign-illustration-pictogram-mall-business-splash-effect-concept-400-248900583.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -166,7 +180,7 @@ input:focus:invalid {
   /* color: transparent; */
   text-align: bottom;
   color:transparent;
-  background: url(https://image.shutterstock.com/z/stock-photo-cartoon-comic-book-template-theme-the-end-535293895.jpg);
+  background: url(https://thumbs.dreamstime.com/z/shopping-cart-icon-comic-style-trolley-cartoon-vector-illustration-white-isolated-background-basket-splash-effect-business-216871928.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -176,6 +190,58 @@ input:focus:invalid {
   width: 20%;
   /* animation: rotateforme 1s ease-in-out; */
 }
+}
+@media (max-width: 600px){
+  #pannier{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    color: transparent;
+    /* background: url(https://img.myloview.fr/images/vector-cartoon-shopping-cart-icon-in-comic-style-shop-bag-sign-illustration-pictogram-mall-business-splash-effect-concept-400-248900583.jpg); */
+    /* background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    background-color: rgb(65, 211, 126);
+    border: 5px black inset ;
+    color:aliceblue;
+    padding:3%;
+    height: 80px;
+    width: 50%;
+  }
+  #pannier:active{
+    display:none;
+    /* color: transparent; */
+    text-align: bottom;
+    color:transparent;
+    /* background: url(https://thumbs.dreamstime.com/z/shopping-cart-icon-comic-style-trolley-cartoon-vector-illustration-white-isolated-background-basket-splash-effect-business-216871928.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    border: 5px aliceblue inset;
+    padding:3%;
+    height: 80px;
+    width: 20%;
+    /* animation: rotateforme 1s ease-in-out; */
+  }
+  .pulsation{
+    box-shadow: 0 0 10px yellow;
+  }
+  .pulsation:hover{
+    animation: pulse 1s infinite;
+    animation-direction: alternate;
+    transition: 1s;
+    border: 3px transparent ridge;
+  }
+  @keyframes pulse {
+        from {
+             box-shadow: 0 0 1px  rgb(255, 231, 17),  0 0 1px  rgb(255, 231, 17),  0 0 1px  rgb(255, 231, 17);
+
+        }
+        to {
+           box-shadow:  0 0 10px  rgb(255, 231, 17), 0 0 10px  rgb(255, 231, 17) , 0 0 10px  rgb(255, 231, 17);
+        }   
+    }
 }
 
 @keyframes rotateforme{
@@ -205,18 +271,40 @@ input:focus:invalid {
   display: flex;
 
 }
-
-#buying-list{
+body{
   display: flex;
-  align-content: center;
-  flex-wrap: wrap;
-  list-style: none;
-  width: 100%;
+  flex-direction: column;
+  background: rgb(201, 56, 51);
+}
+
+
+
+#success{
+  padding: 10px;
 }
 
 
 /* boutons lié a l'achat */
 @media (min-width: 500px){
+  #finalcont{
+    display: flex;
+    width: 100%;
+  }
+  .newcard > li {
+    padding: 5px;
+    border: black 2px inset;
+  }
+  #buying-list{
+    display: flex;
+   /* align-content: center; */
+   /* flex-wrap: wrap; */
+   flex-direction: column;
+   list-style: none; 
+   width: 100%;
+   border: black 3px inset;
+   padding: 2%;
+   /* justify-self: center; */
+ }
      .btnremover{
               display: flex;
               justify-content: center;
@@ -229,7 +317,7 @@ input:focus:invalid {
               background-size: cover;
               
               font-weight: bolder;
-              height: 80px;
+              height: 60px;
               width:80%;
               letter-spacing: 2px;
               transition: 1s;
@@ -245,47 +333,87 @@ input:focus:invalid {
      }
      .newcard{
       display: flex;
-      width: 20%;
+      width: 17%;
       padding: 2%;
+      color: rgba(234, 239, 245, 0.87);
+      background: rgb(201, 56, 51);
       border: 3px rgb(0, 0, 0) solid;
     }
 }
 
 
 @media (max-width: 500px){
+  #finalcont{
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  #buying-list{
+    display: flex;
+   /* align-content: center; */
+   /* flex-wrap: wrap; */
+   /* flex-direction: column; */
+   flex-wrap: wrap;
+   list-style: none; 
+   width: 100%;
+   border: black 3px inset;
+   padding: 2%;
+   /* justify-self: center; */
+ }
     .btnremover{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                justify-self: flex-end;
-                color:  transparent;
-                background: url(https://c8.alamy.com/compfr/pw9fa2/boom-le-style-comique-phrase-avec-bulle-vector-illustration-pw9fa2.jpg);
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-                height: 9%;
-                width:15%;
-                font-weight: bolder;
-                font-size: 0.5em  ;
-                letter-spacing: 2px;
-                transition: 1s;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      justify-self: flex-end;
+      color:  transparent;
+      /* background: url(https://c8.alamy.com/compfr/pw9fa2/boom-le-style-comique-phrase-avec-bulle-vector-illustration-pw9fa2.jpg);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover; */
+      font-weight: bolder;
+      color: red;
+      height: 20px;
+      width:80%;
+      letter-spacing: 2px;
+      transition: 1s;
+
     }
+    /* .btnremover::before{
+      content: 'delete';
+    } */
     .btnremover:hover{
-      background: url(https://c8.alamy.com/compfr/pw9fa2/boom-le-style-comique-phrase-avec-bulle-vector-illustration-pw9fa2.jpg);
+      /* background: url(https://c8.alamy.com/compfr/pw9fa2/boom-le-style-comique-phrase-avec-bulle-vector-illustration-pw9fa2.jpg); */
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-                
-                /* text-decoration: underline aliceblue; */
-                /* padding: 1%; */
-                transition: 1s;
-  }
-  .newcard{
-    display: flex;
-    width: 33%;
-    padding: 2%;
-    border: 3px rgb(0, 0, 0) solid;
-  }
+              
+              transition: 1s;
+     }
+     .newcard{
+      display: flex;
+      /* justify-content: center; */
+      align-items: center;
+      width: 50%;
+      /* padding: 2%; */
+      height: 150px;
+      font-size: 0.65em;
+      color: rgba(234, 239, 245, 0.87);
+      background: rgb(201, 56, 51);
+      border: 3px rgb(0, 0, 0) solid;
+    }
+    .newcard > li {
+      padding: 3px;
+      border: black 2px inset;
+      width: 50%;
+    }
+    .card-title{
+      font-size: 2em;
+    }
+    .card-img-top{
+      display:none;
+    }
 
 }
 
@@ -329,8 +457,8 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  color:black;
-  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9VVNJAT01oESw486ijio96Pb5lJKDr4VCYQ&usqp=CAU);
+  color:rgb(255, 255, 255);
+  background: url(https://img.freepik.com/free-vector/dotted-red-white-comic-style-background_23-2148821983.jpg?size=626&ext=jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -341,16 +469,18 @@ a {
   padding: 1%;
   letter-spacing: 2px;
   border: 3px black ridge;
-  /* text-shadow: 5px 5px black; */
+  text-shadow: 0px 0px 5px black, 0px 0px 5px black, 0px 0px 5px black;
   transition: 1s ease-in-out;
   font-size: 1.3em;
+  transform: scale(1.2);
   }
   .btnavigation:hover{
     color: black;
     text-decoration: underline 3px black;
-    background:   url(https://image.freepik.com/vecteurs-libre/blue-comic-background_1035-7973.jpg);
+    background:   url(https://img.freepik.com/free-vector/dotted-red-white-comic-style-background_23-2148821983.jpg?size=626&ext=jpg);
     background-position: center;
     background-repeat: no-repeat;
+    text-shadow: 0px 0px 5px white, 0px 0px 5px white, 0px 0px 5px white;
     background-size: cover;
     /* border-right: 5px black solid; 
     border-bottom: 5px black solid;  */
@@ -373,43 +503,49 @@ a {
     
   }
   .btnavigation{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color:black;
-  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9VVNJAT01oESw486ijio96Pb5lJKDr4VCYQ&usqp=CAU);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-right: 5px rgb(255, 174, 0) solid;
-  border-bottom: 5px rgb(255, 174, 0) solid; 
-  height: 5%;
-  width: 20%;
-  letter-spacing: 2px;
-  /* text-shadow: 5px 5px black; */
-  transition: 1s ease-in-out;
-  font-size: 0.5em;
-  }
-  .btnavigation:hover{
-    color: black;
-    text-decoration: underline 3px black;
-    background:   url(https://image.freepik.com/vecteurs-libre/blue-comic-background_1035-7973.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:rgb(255, 255, 255);
+    background: url(https://img.freepik.com/free-vector/dotted-red-white-comic-style-background_23-2148821983.jpg?size=626&ext=jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border-right: 5px black solid; 
-    border-bottom: 5px black solid; 
-    transition: 1ss ease-in-out;
-    /* text-shadow: 0px 0px aliceblue; */
-  
-  }
+    /* border-right: 5px rgb(255, 174, 0) solid;
+    border-bottom: 5px rgb(255, 174, 0) solid;  */
+    height: 5%;
+    width: 20%;
+    padding: 1%;
+    letter-spacing: 2px;
+    border: 3px black ridge;
+    text-shadow: 0px 0px 5px black, 0px 0px 5px black, 0px 0px 5px black;
+    transition: 1s ease-in-out;
+    font-size: 1em;
+    transform: scale(1.2);
+    }
+    .btnavigation:hover{
+      color: black;
+      text-decoration: underline 3px black;
+      background:   url(https://img.freepik.com/free-vector/dotted-red-white-comic-style-background_23-2148821983.jpg?size=626&ext=jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      text-shadow: 0px 0px 5px white, 0px 0px 5px white, 0px 0px 5px white;
+      background-size: cover;
+      /* border-right: 5px black solid; 
+      border-bottom: 5px black solid;  */
+      transition: 1s ease-in-out;
+      /* text-shadow: 0px 0px aliceblue; */
+    
+    }
 }
 
 
 
 
 
-
+.padding{
+  padding: 5%;
+}
 
 
 /* middle content*/
@@ -424,8 +560,8 @@ a {
   color: black;
   border: 3px orange solid;
   border: 4px black inset;
-  height: 15%;
-  width: 20%;
+  height: 60px;
+  width: 100px;
   margin-top: 5%;
   margin-bottom: 5%;
   transition: 1s ease-in-out;
@@ -524,7 +660,7 @@ a {
   background-size: cover;
   display: flex;
   /* flex-direction: column; */
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   height: 20%;
   width: 100%;
@@ -570,7 +706,7 @@ a {
 @media (max-width: 600px){
   #tothetop{
     border: 1px solid aliceblue;
-    background:   url(https://image.freepik.com/vecteurs-libre/blue-comic-background_1035-7973.jpg);
+    /* background:   url(https://image.freepik.com/vecteurs-libre/blue-comic-background_1035-7973.jpg); */
 
     background-position: center;
      background-repeat: no-repeat;
@@ -578,8 +714,8 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    height:5%;
-    width: 10%;
+    height:5px;
+    width: 30%;
     font-size: 0.7em;
     color: black;
     transition: 1s;
@@ -598,6 +734,16 @@ a {
   }
   #tothetop > a{
     color: black;
+  }
+  .footman-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    width: 30%;
+    font-size: 0.7em;
+  
+    list-style: none;
   }
   
   

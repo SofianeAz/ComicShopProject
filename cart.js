@@ -22,10 +22,6 @@ function createCartCard(parametre){
     let cartPrice = item.prix;
     let cartIdSerie = item.idSerie;
 
-    // pour l'image.
-    // nomFic.replace(/'|!|\?|\.|"|:|\$/g, "");
-    // let nomFic = serie.nom + "-" + album.numero + "-" + album.titre;
-
     const titreEl = document.createElement('h3');
     titreEl.setAttribute('class', 'cart-titre');
     titreEl.append(cartTitre);
