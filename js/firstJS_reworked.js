@@ -110,7 +110,7 @@ jQuery(document).ready(function ($) {
 		// mySeriePictureContainer.innerHTML = '';
 		for (const [key, item] of albums.entries()) {
 			//  console.log(key);
-			console.log(item.titre);
+			// console.log(item.titre);
 			let neoname = item.titre.toLowerCase();
 			let maRecherche = parametre.toLowerCase();
 			if(neoname.includes(maRecherche)){
@@ -175,7 +175,7 @@ jQuery(document).ready(function ($) {
 		} else {
 			for (const [idAlbum, myAlbum] of albums.entries()) {
 				if (myAlbum.idSerie == num) {
-					console.log(`${serie.nom} = ${myAlbum.titre}`);
+					// console.log(`${serie.nom} = ${myAlbum.titre}`);
 					displaySeriesPicture(serie, myAlbum, idAlbum);
 				}
 			}

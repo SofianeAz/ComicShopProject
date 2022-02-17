@@ -288,7 +288,16 @@ body{
 @media (min-width: 500px){
   #finalcont{
     display: flex;
+    /* align-content: center; */
+    /* flex-wrap: wrap; */
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    list-style: none; 
     width: 100%;
+    border: black 3px inset;
+    height: auto;
+    padding: 2%;
+    /* justify-self: center; */
   }
   .newcard > li {
     padding: 5px;
@@ -298,10 +307,12 @@ body{
     display: flex;
    /* align-content: center; */
    /* flex-wrap: wrap; */
-   flex-direction: column;
+   /* flex-direction: column; */
+   flex-wrap: wrap;
    list-style: none; 
    width: 100%;
    border: black 3px inset;
+   height: auto;
    padding: 2%;
    /* justify-self: center; */
  }
@@ -333,7 +344,7 @@ body{
      }
      .newcard{
       display: flex;
-      width: 17%;
+      width: 17vw;
       padding: 2%;
       color: rgba(234, 239, 245, 0.87);
       background: rgb(201, 56, 51);

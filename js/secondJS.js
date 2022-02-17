@@ -3,8 +3,8 @@
 //--------------------------------------------------- MY WORK NOW --------------------
 
 
-console.log(albums);
-console.log(series);
+// console.log(albums);
+// console.log(series);
 
 // constantes Elements HTML
 const buyingList = document.getElementById("buying-list");
@@ -333,13 +333,18 @@ function createCart(){
     buyingList.innerHTML = '';
     miniPicSearchContainer.innerHTML = '';
     if(document.getElementById('serie').value != ''){
-    for(i = 0; i < infoBuyingCart.length; i++){
-        let myEle = infoBuyingCart[i];
-        let whatIwant = albums.get(myEle);
-        // let mySrc = getMePicture(myEle);
-        console.log(whatIwant);   
-        console.log('hello world');     
-         createCartCard(whatIwant); 
+          // creation du conteneur du caddy final
+                     const finalCont = document.createElement("div");
+                     finalCont.setAttribute('id', 'finalcont')
+                     finalCont.setAttribute('class', 'container border border-dark');
+                     buyingList.append(finalCont);
+                for(i = 0; i < infoBuyingCart.length; i++){
+                    let myEle = infoBuyingCart[i];
+                    let whatIwant = albums.get(myEle);
+                    // let mySrc = getMePicture(myEle);
+                    console.log(whatIwant);   
+                    console.log('hello world');     
+                     createCartCard(whatIwant); 
          
     
         //   let imgEl = document.createElement('img');
@@ -423,10 +428,7 @@ function createCartCard(parametre){
     // priceArray.push(parametre.prix);
     
 
-    const finalCont = document.createElement("div");
-    finalCont.setAttribute('id', 'finalcont')
-    finalCont.setAttribute('class', 'container border border-dark');
-    buyingList.append(finalCont);
+    // conteneur du caddy final
     const ff = document.getElementById('finalcont');
     
     
